@@ -246,7 +246,11 @@
     z-index: -1
 }
 
- 
+.datepicker--nav-action:hover,
+.datepicker--nav-title:hover {
+    background: #f0f0f0
+    
+}
 
 .-top-center- .datepicker--pointer,
 .-top-left- .datepicker--pointer,
@@ -314,16 +318,86 @@
     display: block
 }
 
- 
+.datepicker--nav {
+    display: none;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #efefef;
+    min-height: 32px;
+    padding: 4px
+}
+
+.-only-timepicker- .datepicker--nav {
+    display: none
+}
+
+.datepicker--nav-action,
+.datepicker--nav-title {
+    
      
+    display: none;
+     
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.datepicker--nav-action {
+    display: none;
+    width: 32px;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.datepicker--nav-action.-disabled- {
+    display: none;
+    visibility: hidden
+}
+
+.datepicker--nav-action svg {
+    display: none;
+    width: 32px;
+    height: 32px
+}
+
+.datepicker--nav-action path {
+    display: none;
+    fill: none;
+    stroke: #9c9c9c;
+    stroke-width: 2px
+}
+
+.datepicker--nav-title {
+display: none;
+    border-radius: 4px;
+    padding: 0 8px
+}
 
 .datepicker--buttons,
 .datepicker--time {
     border-top: 1px solid #efefef;
     padding: 4px
 }
- 
- 
+
+.datepicker--nav-title i {
+    display: none;
+    font-style: normal;
+    color: #9c9c9c;
+    margin-left: 5px
+}
+
+.datepicker--nav-title.-disabled- {
+    display: none;
+    cursor: default;
+    background: 0 0
+}
 
 .datepicker--buttons {
     display: -webkit-flex;
